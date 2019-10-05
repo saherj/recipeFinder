@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, ScrollView, Alert, Image, FlatList, } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Alert, Image } from 'react-native';
 import { Button } from 'react-native-elements';
-import Video from 'react-native-video';
+
 
 
 export default class ProfileScreen extends Component {
@@ -9,7 +9,6 @@ export default class ProfileScreen extends Component {
       return (
       
         <View>
-            
             <View>
                 <Text style={styles.title}> Recipe Finder</Text>
             </View>
@@ -35,54 +34,43 @@ export default class ProfileScreen extends Component {
                     <View>
                         <Image style={styles.profileImage}
                                 source={ require('./assets/food1.jpg')}/>
-                        <Text style={styles.mediumcardtext}>Eggplant</Text>
+                        <Text style={styles.profilecardtext}>Eggplant</Text>
                     </View>
                     
                     <View>
                         <Image style={styles.profileImage}
                                 source={ require('./assets/food2.jpg')}/>
-                        <Text style={styles.mediumcardtext}>Yam Fries</Text>
+                        <Text style={styles.profilecardtext}>Yam Fries</Text>
                     </View>
                     <View>
                         <Image style={styles.profileImage}
                                 source={ require('./assets/food4.jpg')}/>
-                        <Text style={styles.mediumcardtext}>Pizza</Text>
+                        <Text style={styles.profilecardtext}>Pizza</Text>
                     </View>
                     <View>
                         <Image style={styles.profileImage}
                                 source={ require('./assets/food5.jpg')}/>
-                        <Text style={styles.mediumcardtext}>Gluten Free Pizza</Text>
+                        <Text style={styles.profilecardtext}>Gluten Free Pizza</Text>
                     </View>
                     <View>
                         <Image style={styles.profileImage}
                                 source={ require('./assets/food7.jpg')}/>
-                        <Text style={styles.mediumcardtext}>Avocado Roll</Text>
+                        <Text style={styles.profilecardtext}>Avocado Roll</Text>
                     </View>
                     <View>
                         <Image style={styles.profileImage}
                                 source={ require('./assets/food9.jpg')}/>
-                        <Text style={styles.mediumcardtext}>Bean Salad</Text>
+                        <Text style={styles.profilecardtext}>Bean Salad</Text>
                     </View>
                 </View>
-
-
-                <View>
-                    
-                </View>
-
-
             </ScrollView>
-
-
-
-
-         
           </View>
       );
   }
 }
 
 const styles = StyleSheet.create({
+    
     title: {
         fontSize:40,
         fontWeight: '900',
@@ -94,7 +82,6 @@ export default class ProfileScreen extends Component {
         marginTop:40,
         fontFamily: 'Cochin-BoldItalic',
         textShadowColor: 'red',
-        
     },
 
     profilecontainer: {
@@ -111,7 +98,6 @@ export default class ProfileScreen extends Component {
         marginLeft: 250,
         width:120,
         marginVertical:20,
-
     },
 
     uploadcontainer: {
@@ -123,9 +109,6 @@ export default class ProfileScreen extends Component {
         justifyContent: 'space-evenly',
         marginRight:20,
         marginLeft:10,
-
-
-
     },
 
     profileImage: {
@@ -134,9 +117,14 @@ export default class ProfileScreen extends Component {
         marginVertical: 15,
         resizeMode: 'cover',
         marginLeft:0,
-        
+    },
 
-        
+    profilecardtext: {
+        fontWeight: '500',
+        fontSize:15,
+        marginLeft:20,
+        color: 'black',
+        marginLeft:0,
     },
 
     profileheading: {
@@ -147,9 +135,6 @@ export default class ProfileScreen extends Component {
         marginVertical:0,
         marginHorizontal:20,
         color: 'white',
-
-        
-
     },
 
     profiletext: {

@@ -6,32 +6,31 @@ export default class Dishes extends Component {
   render() {
       return (
         <View>
-        <Image style={styles.favcard} source={this.props.imageName} />
-      
-        <Text style={styles.favcardtext}> {this.props.title}</Text>
-        <Text style={styles.paragraph}> {this.props.para}</Text>
-        <View style= {styles.starcontainer}>
+            <Image style={styles.favcard} source={this.props.imageName} />
+            <Text style={styles.favcardtext}> {this.props.title}</Text>
+            <Text style={styles.paragraph}> {this.props.para}</Text>
             
-            <StarRating 
-            disabled = {true}
-            maxStars = {5}
-            rating = {this.props.rating}
-            starSize = {15} 
-            
-            />
+            <View style= {styles.starcontainer}>
+                <StarRating 
+                disabled = {true}
+                maxStars = {5}
+                rating = {this.props.rating}
+                starSize = {15} />
+            </View>
         </View>
-    </View>
       );
   }
 }
 
 const styles = StyleSheet.create({
+    
     container: {
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center'
     },
+
     favcard: {
         flex: 1,
         margin:15,
@@ -40,12 +39,12 @@ export default class Dishes extends Component {
         alignItems: 'center',
         marginHorizontal:20,
         paddingHorizontal:15,
-       
         paddingVertical:12,
         width:375,
         height:150,
         resizeMode: 'cover',
     },
+
     mediumcardimage: {
         margin:0,
         flex: 1,
@@ -76,13 +75,12 @@ export default class Dishes extends Component {
         marginVertical:10,
         marginBottom:20,
     }, 
+
     paragraph: {
         marginLeft:18,
         marginHorizontal:20,
         fontSize: 15,
         marginVertical:5,
-
-
     },
 
    

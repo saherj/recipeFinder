@@ -9,14 +9,11 @@ export default class HomeScreen extends Component {
     
       return (
           <View>
-
             <View>
                 <Text style={styles.title}> Recipe Finder</Text>
                 <View style={styles.fakesearchbar}>
                     <TextInput placeholder= 'seach' style={styles.searchtext} ></TextInput>
                 </View>
-  
-            
             </View>
 
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -52,9 +49,7 @@ export default class HomeScreen extends Component {
                             </View>
                         </ScrollView>
                     </View>
-                
-
-                    
+                   
                 </View>
 
                 <View>
@@ -139,7 +134,6 @@ export default class HomeScreen extends Component {
         marginTop:40,
         fontFamily: 'Cochin-BoldItalic',
         textShadowColor: 'red',
-        
     },
 
     fakesearchbar: { 
@@ -151,19 +145,19 @@ export default class HomeScreen extends Component {
          marginHorizontal:20,
          height:40,
          marginBottom:5,
-     },
+    },
 
-     searchtext: {
+    searchtext: {
         fontSize:18,
         padding:10,
-     },
-  
-
+    },
+    
     cardcontainer: {
         flexDirection: 'column',
         paddingRight:0,
        
     },
+
     minicard: {
         flex: 1,
         marginHorizontal:20,
@@ -178,6 +172,7 @@ export default class HomeScreen extends Component {
         paddingHorizontal:30,
         paddingVertical:6,
     },
+
     minicardtext: {
         flex: 1,
         marginTop:0,
@@ -189,6 +184,7 @@ export default class HomeScreen extends Component {
         backgroundColor: 'white',
         textAlign: 'center',
     },
+
     mainImage: {
         width:64,
         height:64,
@@ -199,16 +195,14 @@ export default class HomeScreen extends Component {
         fontWeight: '800',
         marginTop:5,
         paddingHorizontal:20,
-
     },
+
     subheading: {
         fontSize:25,
         fontWeight: '700',
         marginTop:7,
         marginVertical:0,
         marginHorizontal:20,
-        
-
     },
 
     featuredcard: {
@@ -219,14 +213,11 @@ export default class HomeScreen extends Component {
         alignItems: 'center',
         marginHorizontal:20,
         paddingHorizontal:15,
-       
         paddingVertical:12,
         width:375,
         height:240,
         resizeMode: 'cover',
     },
-
-   
 
     mediumcardimage: {
         margin:0,
@@ -248,8 +239,5 @@ export default class HomeScreen extends Component {
         textAlign:'left',
         marginLeft:20,
     },
-
-
-
 
 });

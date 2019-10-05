@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, ScrollView, Image } from 'react-native';
 
-
 import Dishes from './dishes';
-
 
 export default class FavouriteScreen extends Component {
   render() {
       return (
 
         <View>
-
             <View>
                 <Text style={styles.title}> Recipe Finder</Text>
             </View>
@@ -19,14 +16,10 @@ export default class FavouriteScreen extends Component {
                 <View>
                     <Text style={styles.mainheading}>What would you like to cook today?</Text>
                 </View>
-                
-
+                    
+                    
                 <Dishes  imageName ={require('./assets/food2.jpg')} title= "Yam Fries"  para= "Toasty fresh farm yam fries with avocado and more vegtables and two side sauces." rating={4} />
                 <Dishes  imageName ={require('./assets/food3.jpg')} title= "Clamp Stir Fry"  para= "Authentic Chiness clamp stir fry with extra vegtables and tangy sauce." rating={3} />
-
-
-
-
 
                 <View>
                     <Text style={styles.subheading}>Recently Viewed</Text>
@@ -58,9 +51,6 @@ export default class FavouriteScreen extends Component {
                 </View>
 
                 <View style= {{flex:1, height:150}}></View>
-
-
-
             </ScrollView>
         
         </View>
@@ -81,7 +71,6 @@ export default class FavouriteScreen extends Component {
         marginTop:40,
         fontFamily: 'Cochin-BoldItalic',
         textShadowColor: 'red',
-        
     },
 
     titleFont: { 
@@ -89,8 +78,8 @@ export default class FavouriteScreen extends Component {
         fontWeight:'700',
         paddingTop:100,
         paddingHorizontal:20
-
     },
+
     mainheading: {
         fontSize:30,
         fontWeight: '800',
@@ -98,13 +87,11 @@ export default class FavouriteScreen extends Component {
         paddingHorizontal:20,
         color: '#f7868b',
         fontFamily: 'Georgia-Bold',
-
     },
 
     cardcontainer: {
         flexDirection: 'column',
         paddingRight:0,
-       
     },
 
     mediumcardimage: {
@@ -134,8 +121,6 @@ export default class FavouriteScreen extends Component {
         marginTop:3,
         marginVertical:0,
         marginHorizontal:20,
-        
-
     },
 
     featuredcard: {
@@ -146,7 +131,6 @@ export default class FavouriteScreen extends Component {
         alignItems: 'center',
         marginHorizontal:20,
         paddingHorizontal:15,
-       
         paddingVertical:12,
         width:375,
         height:240,
