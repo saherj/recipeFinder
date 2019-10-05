@@ -1,0 +1,7 @@
+{
+	"recipe" : [
+		{"name" : "Fried Rice", "ingredients" : "6", "time" : 20},
+		{"name" : "Burger", "ingredients" : "8", "time" : 15},
+		{"name" : "tacos", "ingredients" : "10", "time" : 10}
+	]
+}
